@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱游戏 · 用户指南</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f4f5f9;
+            color: #1e1f2a;
+            line-height: 1.8;
+            letter-spacing: 0.012em;
+        }
+
+        .hero {
+            background: linear-gradient(145deg, #0d0e1a 0%, #1f2133 100%);
+            padding: 5rem 2rem 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: #facc15;
+            opacity: 0.5;
+        }
+
+        .hero h1 {
+            color: #ffffff;
+            font-size: 2.8rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.6rem;
+        }
+
+        .hero .sub {
+            color: #b5b8cf;
+            font-size: 1rem;
+            font-weight: 400;
+            max-width: 520px;
+            margin: 0 auto 0.75rem;
+            border-top: 1px solid #343650;
+            padding-top: 0.75rem;
+        }
+
+        .hero .tagline {
+            color: #e6e8ff;
+            font-size: 1.15rem;
+            font-weight: 450;
+            background: rgba(250, 204, 21, 0.08);
+            display: inline-block;
+            padding: 0.3rem 1.2rem;
+            border-radius: 30px;
+            border: 1px solid rgba(250, 204, 21, 0.25);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 1.8rem 4rem;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #141520;
+            border-left: 4px solid #facc15;
+            padding-left: 1rem;
+            margin-bottom: 1.2rem;
+            margin-top: 2.6rem;
+        }
+
+        .section-title:first-of-type {
+            margin-top: 0.2rem;
+        }
+
+        p {
+            margin-bottom: 1.4rem;
+            font-size: 1rem;
+            color: #2b2d3a;
+        }
+
+        .highlight-card {
+            background: #ffffff;
+            padding: 1.6rem 1.8rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03), 0 1px 3px rgba(0, 0, 0, 0.04);
+            margin: 2rem 0 1.8rem;
+            border: 1px solid #e9eaf0;
+        }
+
+        .highlight-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .insight {
+            background: #f0f1f8;
+            border-left: 4px solid #3b3f5c;
+            padding: 1rem 1.6rem;
+            border-radius: 0 12px 12px 0;
+            margin: 1.8rem 0;
+            font-style: normal;
+            color: #1f2133;
+        }
+
+        .insight strong {
+            color: #11121c;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        a:hover {
+            border-bottom-color: #2563eb;
+            color: #1d4ed8;
+        }
+
+        .faq-summary {
+            display: grid;
+            gap: 1.2rem;
+            margin: 2rem 0 0.8rem;
+        }
+
+        .faq-item {
+            background: #ffffff;
+            padding: 1.2rem 1.5rem;
+            border-radius: 14px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.01);
+            border: 1px solid #e2e4ee;
+        }
+
+        .faq-item .q {
+            font-weight: 600;
+            color: #181a28;
+            margin-bottom: 0.1rem;
+            font-size: 1.02rem;
+        }
+
+        .faq-item .a {
+            color: #41445a;
+            font-size: 0.95rem;
+            margin-top: 0.2rem;
+        }
+
+        .faq-item .a a {
+            font-weight: 500;
+        }
+
+        .footnote {
+            color: #5c5f78;
+            font-size: 0.9rem;
+            border-top: 1px solid #d9dbe8;
+            padding-top: 2rem;
+            margin-top: 2.4rem;
+            text-align: center;
+        }
+
+        @media (max-width: 640px) {
+            .hero h1 {
+                font-size: 2.1rem;
+            }
+
+            .hero .tagline {
+                font-size: 1rem;
+                padding: 0.2rem 1rem;
+            }
+
+            .container {
+                padding: 2rem 1.2rem 3rem;
+            }
+
+            .highlight-card {
+                padding: 1.2rem 1.2rem;
+            }
+
+            .section-title {
+                font-size: 1.15rem;
+            }
+
+            .faq-item {
+                padding: 1rem 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>爱游戏</h1>
+        <div class="sub">轻量 · 明确 · 无冗余</div>
+        <div class="tagline">一个站点 · 一种用途</div>
+    </section>
+
+    <div class="container">
+
+        <p style="margin-top:0.2rem;">
+            如果你打开一个网站，却要在三分钟内判断它究竟是做什么的，那这个网站的设计就失败了。好的站点应当在第一眼就传递出核心信息。<a href="https://app1-ayx.com">爱游戏</a> 遵循的正是这个原则：标题即定位，内容即功能。
+        </p>
+
+        <div class="section-title">定位与边界</div>
+        <p>
+            <strong>爱游戏</strong> 所提供的，是一个经过筛选的信息空间。它不追求大而全，而是围绕明确的使用场景进行组织。无论你是初次接触，还是想要快速确认某个服务是否匹配当前需求，都可以直接从页面结构中获得答案——减少了不必要的跳转和搜索成本。
+        </p>
+
+        <div class="highlight-card">
+            <p>
+                “一个工具的价值，取决于你多快能判断它是否适合你。” —— 这句话放在网站设计上同样成立。如果首页需要超过 10 秒才能让人理解用途，就已经产生了认知摩擦。<a href="https://app1-ayx.com">爱游戏</a> 试图消除这种摩擦，让识别发生在瞬间。
+            </p>
+        </div>
+
+        <div class="section-title">典型使用场景</div>
+        <p>
+            用户带着不同预期进入一个站点。有人想确认平台是否支持某项操作，有人想评估内容风格是否匹配偏好，也有人只需要一个直接的入口。在 <a href="https://app1-ayx.com">爱游戏</a> 中，这些场景被收敛为几条清晰路径：信息获取、功能触发、以及必要的上下文指引。没有多余的装饰，也没有模糊的跳转逻辑。
+        </p>
+        <p>
+            这意味着，你可以把注意力放在“这个页面是否解决了我的问题”上，而不是“我该点哪里”。这种克制本身就是一种效率。
+        </p>
+
+        <div class="insight">
+            <strong>提示：</strong> 当你不确定一个网站是否匹配需求时，先看它的首页是否在 5 秒内回答了三个问题：这是什么、用来做什么、下一步做什么。<a href="https://app1-ayx.com">爱游戏</a> 针对这三个问题给出了简洁的回答。
+        </div>
+
+        <div class="section-title">常见疑问摘要</div>
+        <div class="faq-summary">
+            <div class="faq-item">
+                <div class="q">这个网站主要提供什么？</div>
+                <div class="a">一个直接呈现核心功能的页面，避免多层菜单和无关信息。你可以通过 <a href="https://app1-ayx.com">爱游戏</a> 快速了解可用服务的基本范围。</div>
+            </div>
+            <div class="faq-item">
+                <div class="q">是否需要注册或安装额外组件？</div>
+                <div class="a">不需要。所有内容通过浏览器即可访问，页面本身不要求注册、下载或配置。具体功能的使用方式在站内已有说明。</div>
+            </div>
+            <div class="faq-item">
+                <div class="q">网站内容更新频率如何？</div>
+                <div class="a">内容保持稳定，仅在功能或信息结构发生实际变化时更新。你可以信赖当前页面所描述的状态。</div>
+            </div>
+        </div>
+
+        <div class="footnote">
+            <span>简洁 · 专业 · 可识别</span>
+        </div>
+
+    </div>
+
+</body>
+</html>
